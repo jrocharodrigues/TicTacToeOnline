@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/game_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TableRow
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tile1"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="0,0"
+                android:textSize="@dimen/game_tile_text_size" />
+
+            <TextView
+                android:id="@+id/tile2"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="0,1"
+                android:textSize="@dimen/game_tile_text_size" />
+
+            <TextView
+                android:id="@+id/tile3"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="0,2"
+                android:textSize="@dimen/game_tile_text_size" />
+        </TableRow>
+
+        <TableRow
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tile4"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="1,0"
+                android:textSize="@dimen/game_tile_text_size" />
+
+            <TextView
+                android:id="@+id/tile5"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="1,1"
+                android:textSize="@dimen/game_tile_text_size" />
+
+            <TextView
+                android:id="@+id/tile6"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="1,2"
+                android:textSize="@dimen/game_tile_text_size" />
+        </TableRow>
+
+        <TableRow
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tile7"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="2,0"
+                android:textSize="@dimen/game_tile_text_size" />
+
+            <TextView
+                android:id="@+id/tile8"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="2,1"
+                android:textSize="@dimen/game_tile_text_size" />
+
+            <TextView
+                android:id="@+id/tile9"
+                android:layout_width="@dimen/game_board_square_dimension"
+                android:layout_height="@dimen/game_board_square_dimension"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onTileClicked"
+                android:tag="2,2"
+                android:textSize="@dimen/game_tile_text_size" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        android:text="@string/status_start" />
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/statusText"
+        android:text="@string/play_again"
+        android:visibility="invisible" />
+
+</RelativeLayout>
